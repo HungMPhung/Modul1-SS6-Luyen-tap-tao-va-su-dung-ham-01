@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = prompt("Enter here");
+    console.log(typeof star);
+    let starArray = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let galaxyArray = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let write = "";
+    let i = 0;
+
+    function findingStar(star) {
+        for (i = 0; i < starArray.length; i++) {
+            if (star === starArray[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    if (findingStar(star)) {
+        write = write + star + " is belong to " + "Galaxy " + galaxyArray[i];
+    } else {
+        write = write + "Your star is far from here";
+    }
+    document.write(write);
+</script>
+</body>
+</html>
+
+
